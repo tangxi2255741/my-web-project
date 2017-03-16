@@ -2,16 +2,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>my-project</artifactId>
-        <groupId>com.tx</groupId>
-        <version>0.0.1-SNAPSHOOT</version>
+        <groupId>com.jd.tx</groupId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>my-project-service</artifactId>
-    <version>0.0.1-SNAPSHOOT</version>
+    <artifactId>my-project-domain</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>my-project-service</name>
+    <name>my-project-domain</name>
     <url>http://maven.apache.org</url>
 
     <properties>
