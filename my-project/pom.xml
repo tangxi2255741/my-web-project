@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- pom.xml的根元素-->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- 当前pom模型的版本,maven2\3只能是4.0.0-->
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jd.tx</groupId>
