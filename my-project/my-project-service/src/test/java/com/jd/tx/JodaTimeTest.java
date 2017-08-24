@@ -47,6 +47,7 @@ public class JodaTimeTest {
 
     @Test
     public void testPuls(){
+        // 时间之后处理
         DateTime now = DateTime.now();
         System.out.println("当前时间：" + now.toString(DATE_TIME_FORMAT));
         System.out.println("一小时后：" + now.plusHours(1).toString(DATE_TIME_FORMAT));
