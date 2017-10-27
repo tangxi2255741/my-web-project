@@ -1,4 +1,4 @@
-package com.jd.tx;
+package com.jd.tx.service;
 
 import org.joda.time.DateTime;
 import org.joda.time.LocalDate;

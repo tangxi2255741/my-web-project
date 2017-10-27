@@ -3,6 +3,7 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          id="WebApp_ID" version="2.5">
+  <!-- 应用名称-->
   <display-name>springmvc</display-name>
   <servlet>
     <servlet-name>springmvc</servlet-name>
@@ -11,13 +12,15 @@
       <param-name>contextConfigLocation</param-name>
       <param-value>classpath*:/spring-config.xml</param-value>
     </init-param>
+    <!-- 指定servlet的加载顺序 值越小优先级越高-->
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
     <servlet-name>springmvc</servlet-name>
-    <url-pattern>/*</url-pattern>
+    <url-pattern>/*</url-pattern><!-- 所有请求都走springmvc servlet-->
   </servlet-mapping>
 
+  <!-- 配置过滤器-->
   <filter>
     <filter-name>encodingFilter</filter-name>
     <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -31,6 +34,7 @@
     </init-param>
   </filter>
   <filter-mapping>
+    <!-- 所有请求进行UTF-8编码-->
     <filter-name>encodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
     <dispatcher>REQUEST</dispatcher>
