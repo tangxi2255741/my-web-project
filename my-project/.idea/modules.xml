@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/my-project-domain/my-project-domain.iml" filepath="$PROJECT_DIR$/my-project-domain/my-project-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-rpc-comsumer/my-project-rpc-comsumer.iml" filepath="$PROJECT_DIR$/my-project-rpc-comsumer/my-project-rpc-comsumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-rpc-provider/my-project-rpc-provider.iml" filepath="$PROJECT_DIR$/my-project-rpc-provider/my-project-rpc-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-project-rpc-provider/my-project-rpc-provider.iml" filepath="$PROJECT_DIR$/my-project-rpc-provider/my-project-rpc-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-project-sdk/my-project-sdk.iml" filepath="$PROJECT_DIR$/my-project-sdk/my-project-sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-sdk/my-project-sdk.iml" filepath="$PROJECT_DIR$/my-project-sdk/my-project-sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-service/my-project-service.iml" filepath="$PROJECT_DIR$/my-project-service/my-project-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/my-project-web/my-project-web.iml" filepath="$PROJECT_DIR$/my-project-web/my-project-web.iml" />

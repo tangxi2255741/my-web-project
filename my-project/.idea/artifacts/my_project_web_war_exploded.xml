@@ -13,6 +13,9 @@
           <element id="archive" name="my-project-rpc-comsumer-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="my-project-rpc-comsumer" />
           </element>
+          <element id="library" level="project" name="Maven: javax:javaee-api:7.0" />
+          <element id="library" level="project" name="Maven: com.sun.mail:javax.mail:1.5.0" />
+          <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
           <element id="library" level="project" name="Maven: joda-time:joda-time:2.9.5" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.25" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:18.0" />
