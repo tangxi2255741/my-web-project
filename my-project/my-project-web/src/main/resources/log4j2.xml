@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="${log.level}">
+    <Properties>
+        <Property name="LOG_SIZE">512MB</Property>
+        <property name="LOG_ROLLOVER_MAX">5</property>
+    </Properties>
+    <Appenders>
+        <RollingFile name="projectAppender" fileName="${instance.logs.path}/project.log"  immediateFlush="false" append="true"
+                     filePattern="${instance.logs.path}/project.%d{yyyy-MM-dd}_%i.log" >
+            <PatternLayout Pattern="${patternLayout}" charset="UTF-8"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="${LOG_SIZE}"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="${LOG_ROLLOVER_MAX}"/>
+        </RollingFile>
+
+        <RollingFile name="errorAppender" fileName="${instance.logs.path}/error.log"  immediateFlush="false" append="true"
+                     filePattern="${instance.logs.path}/error.%d{yyyy-MM-dd}_%i.log" >
+            <PatternLayout Pattern="${patternLayout}" charset="UTF-8"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="${LOG_SIZE}"/>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+            <DefaultRolloverStrategy max="${LOG_ROLLOVER_MAX}"/>
+            <Filters>
+                <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </RollingFile>
+
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout Pattern="${patternLayout}"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <AsyncRoot level="${log.level}" includeLocation="true">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="errorAppender"/>
+            <AppenderRef ref="projectAppender"/>
+        </AsyncRoot>
+    </Loggers>
+</Configuration>
+
+
